@@ -18,11 +18,11 @@ const resolvers = {
 };
 
 // schema and resolver
-const server = new ApolloServer({
+export const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
 
-server.listen().then(({ url }) => {
-  console.log("RUNNING" + url);
+server.listen().then(() => {
+  console.log("RUNNING");
 });
