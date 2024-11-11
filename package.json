@@ -2,7 +2,7 @@
   "name": "GrahQL",
   "version": "1.0.0",
   "description": "A GraphQL project - E-commurce ",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
