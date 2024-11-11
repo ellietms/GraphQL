@@ -1,11 +1,13 @@
 import { ApolloServer, gql } from "apollo-server";
 
 // add query here to fetch data
+// schema
 const typeDefs = gql`
   type Query {
     hello: string
   }
 `;
+
 
 const resolvers = {
   Query: {
