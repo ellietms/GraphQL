@@ -23,5 +23,5 @@ export const server = new ApolloServer({
 });
 
 server.listen().then(() => {
-  console.log("RUNNING");
+  console.log("Server is RUNNING");
 });
