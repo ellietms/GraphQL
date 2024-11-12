@@ -4,10 +4,9 @@ import { ApolloServer, gql } from "apollo-server";
 // schema
 const typeDefs = gql`
   type Query {
-    hello: string
+    hello: String
   }
 `;
-
 
 const resolvers = {
   Query: {

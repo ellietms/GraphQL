@@ -1,11 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const apollo_server_1 = require("apollo-server");
+import { ApolloServer, gql } from "apollo-server";
 // add query here to fetch data
 // schema
-const typeDefs = (0, apollo_server_1.gql) `
+const typeDefs = gql `
   type Query {
-    hello: string
+    hello: String
   }
 `;
 const resolvers = {
@@ -16,7 +14,7 @@ const resolvers = {
     },
 };
 // schema and resolver
-const server = new apollo_server_1.ApolloServer({
+export const server = new ApolloServer({
     typeDefs,
     resolvers,
 });
